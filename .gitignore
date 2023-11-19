@@ -1,0 +1,11 @@
+.idea
+*.iml
+
+*.png
+!ico.png
+
+package.json
+package-lock.json
+
+info.plist
+prefs.plist

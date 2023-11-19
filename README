@@ -1,0 +1,19 @@
+# GPT Alfred
+---
+
+This is Alfred GPT workflow which can enchance your work efficiency to a great level.
+
+## Three usage:
+[One-time Chat] 1. Open Alfred, type gpt then a space, ask the content you would like to ask to GPT, then press enter.
+[Translate] 2. Open Alfred, type tran then a space, type the Chinese or English you would like to translate then press enter.
+[Translate] 3. Copy the content you would like to translate, then open Alfred type tran and then press enter, it would automatically send the clipboard content you just copied, then translate it to English or Chinese.
+
+**All responses from GPT will be returned on the notification center as well as copied into your clipboard.**
+
+For developers:
+
+Python Package Required:
+```
+openai
+requests
+```
