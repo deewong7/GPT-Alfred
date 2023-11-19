@@ -12,6 +12,7 @@ from openai import OpenAI
 import config
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client.base_url = config.BASE_URL
 
 TERMINAL = os.getenv('GPT_IN_TERMINAL', default=False)
 if TERMINAL == "1":

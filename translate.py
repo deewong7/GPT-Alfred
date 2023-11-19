@@ -5,6 +5,7 @@ from openai import OpenAI
 import config
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client.base_url = config.BASE_URL
 
 
 def translate_to_chinese(text):

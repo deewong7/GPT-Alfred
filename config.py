@@ -1,6 +1,10 @@
 import os
 
-MODEL_SELECTION = os.getenv('GPT_MODEL_SELECTION')
+BASE_URL = os.getenv('BASE_URL', default="https://api.openai.com")
+if BASE_URL == "":
+    BASE_URL = "https://api.openai.com"
+
+MODEL_SELECTION = os.getenv('GPT_MODEL_SELECTION', default="gpt-3.5-turbo")
 if MODEL_SELECTION == "":
     MODEL_SELECTION = 'gpt-3.5-turbo'
 
